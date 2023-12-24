@@ -11,19 +11,19 @@ export default function Navbar() {
         function handleScroll() {
             const header = document.querySelector('header');
             const fixedNav = header.offsetTop;
-
+        
             if (window.pageYOffset > fixedNav) {
                 header.classList.add('navbar-fixed');
             } else {
                 header.classList.remove('navbar-fixed');
             }
         }
-
+        
         function handleHamburgerClick() {
             hamburger.classList.toggle('hamburger-active');
             navMenu.classList.toggle('hidden');
         }
-
+        
         function handleOutsideClick(event) {
             if (!hamburgerRef.current.contains(event.target) && !navMenuRef.current.contains(event.target)) {
                 hamburger.classList.remove('hamburger-active');
@@ -33,7 +33,7 @@ export default function Navbar() {
 
         hamburger.addEventListener('click', handleHamburgerClick);
         document.addEventListener('click', handleOutsideClick);
-
+        
         // Tambahkan event listener untuk event scroll
         window.addEventListener('scroll', handleScroll);
             
