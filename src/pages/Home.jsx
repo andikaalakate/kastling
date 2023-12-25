@@ -6,12 +6,10 @@ import '../css/style.css';
 
 export default function Home() {
     return (
-        <>
         <div className="mx-auto text-center max-w-sm p-4">
             <ProfileContainer />
             <Menu />
             <Footer />
         </div>
-        </>
     );
 }
