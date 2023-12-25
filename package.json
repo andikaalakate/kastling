@@ -9,11 +9,12 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "tail": "npx tailwindcss -i ./src/plugins/TailwindCSS/css/tailwindcss.css -o ./src/css/style.css --watch",
-    "api-service": "nodemon src/express.js"
+    "api-service": "nodemon ./src/api/express.js"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
+    "mysql": "^2.18.1",
     "nodemon": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
