@@ -1,4 +1,4 @@
-import "../App.css";
+// import "../App.css";
 import "../css/style.css";
 
 export default function ProfileContainer() {
@@ -14,7 +14,7 @@ export default function ProfileContainer() {
 
                     <div className="self-center p-4 pb-8 w-1/2">
                         <h1 className="text-sm">Andika Pratama</h1>
-                        <a href="#contact" className="text-[8px] font-semibold text-white bg-sky-600 py-2 px-4 rounded-full hover:shadow-lg hover:text-white">Hubungi Saya</a>
+                        <a href="#" className="text-[8px] font-semibold text-white bg-sky-600 py-2 px-4 rounded-full hover:shadow-lg hover:text-white">Hubungi Saya</a>
                     </div>
                 </div>
             </div>
